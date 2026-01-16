@@ -1,8 +1,10 @@
-# plusコマンド
+# 階段ダイエットコマンド
 
-![test](https://github.com/cyanhide/robosys202x/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/cyanhide/robosys2026/actions/workflows/test.yml/badge.svg)
 
-標準入力から読み込んだ数字を足す。整数のみ対応している。
+本プログラムは、お昼ご飯で摂取したカロリー量を入力すると、階段の昇降によってそのカロリーを消費するために必要な運動量を計算し、何階まで登ればよいか、また必要に応じて何階まで下りる必要があるかを出力するプログラムである。
+
+階段を1段登るごとに0.1Kcal、1段下りるごとに0.05Kcalを消費するものとし、1階あたり20段、最大19階まで昇ることができる条件を想定している。
 
 ## 使用方法と例
 

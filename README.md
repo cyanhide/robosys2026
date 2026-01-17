@@ -6,45 +6,47 @@
 
 階段を1段登るごとに0.1Kcal、1段下りるごとに0.05Kcalを消費するものとし、1階あたり20段、最大19階まで昇ることができる条件を想定している。
 
-## 使用方法と例
-
-1.システムにPython 3がインストールされていることを確認してください。
-
-2. 以下のコマンドを使用して実行してください。
-
-(例）
-
-```bash
-$ seq 5 | ./plus
-``` 
-
-15
-
-## インストール
-GitHubからリポジトリをクローンする。
-
-```bash
-$ git clone https://github.com/cyanhide/robosys2023.git
+## 実行例
+①
 ```
-クローン出来たらリポジトリのディレクトリに移動する
-```bash
-$ cd robosys2023
+$ ./stair_calorie.py
+お昼ご飯の摂取カロリー(Kcal)を入力してください: 130 
+往復2セット（登り＋下り）と、1階から12階まで階段を上ってください。
+```
+②
+```
+$ echo 130 | ./stair_calorie.py
+往復2セット（登り＋下り）と、1階から12階まで階段を上ってください。
 ```
 
+## インストール方法
+* pythonが導入された環境で, 下記のコマンドを入力する。
+```
+$ git clone https://github.com/cyanhide/robosys2026.git
+```
+* robosys2026ディレクトリに移動。
+```
+$ cd robosys2026
+```
+* 実行方法に関しては、上記の使い方を参照してください。実行権限が付与されていない場合は, 下記コマンドを入力してください。
+```
+$ chmod +x stair_calorie.py
+```
 
 ## 必要なソフトウェア
 
 * python
 
    ◦テスト済み:3.7~3.10
+* Ubuntu 20.04.4 LTS
 
 ## テスト環境
 
-* Ubuntu 20.04 on Windows
+* Ubuntu 20.04.4 LTS
 
 ## Licence
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-* このパッケージのコードは, 下記のスライド (CC-BY-SA 4.0 by Ryuichi Ueda) のものを, 本人の許可を得て自身の著作としたものです.
-    * [ryuichiueda/my_slides robosys_2022 lesson4.md](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022/lesson4.md?plain=1)
-* © 2023 Hidenori Koseki
-
+* © 2025 Hidenori Koseki
+## 参考文献
+- このパッケージのディレクトリ構成やテスト方式、コードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て参考にしています。
+    - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025) （© 2025 Ryuichi Ueda）
